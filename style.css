@@ -1,0 +1,281 @@
+*{
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     
+}
+
+body{
+    margin:0;
+    background-image: url('images/backgroundMA.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    width: 100%;
+    
+}
+
+/* Página LOGIN */
+    header{
+        text-align: right;
+        background-image: linear-gradient(to right, rgb(228, 228, 228), blue);
+        padding: 15px;
+        margin: 0;
+        border-bottom: 2px solid black;
+    }
+    
+    .logo{
+        width: 9%;
+        float: left;
+    }
+
+    header h1{
+        color: white;
+        text-shadow: 0.1em 0.1em 0.1em black;
+    }
+    
+    header h2{
+        color: white;
+        text-shadow: 0.1em 0.1em 0.1em black;
+        position: relative;
+        top: 30px;
+    }
+    
+    header a{
+        position: relative;
+        top: 10px;
+        color: white;
+        text-shadow: 0.1em 0.1em 0.1em black;
+        text-decoration: none;
+        margin-right:5%;
+        font-size: 25px;
+        -webkit-transition: font-size 0.10s ease;
+        transition: font-size 0.8s ease;
+    }
+    
+    header a:hover{
+       color: red;
+       font-size: 30px;
+    }
+
+    header p{
+        color: white;
+        text-shadow: 0.1em 0.1em 0.1em black;
+        margin:0;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .painelogin{
+        width: 60%;
+        text-align: center;
+        margin:  3% auto;
+        padding: 1rem;
+        border-width: 7px;
+        border-style: solid;
+        border-image: linear-gradient(to bottom,blue, red) 1 100%;
+      }
+    
+    .painelogin img{
+        width: 30%;
+        margin: 0;
+    }
+
+    .loginput{
+        font-weight: bold;
+        width: 50%;
+        height: 20px;
+        margin: 5px 0;
+        border: none;
+        border-bottom: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        background: transparent;
+    }
+
+    .submit{
+        color: white;
+        background-color: green;
+        width: 15%;
+        margin: 5px 0;
+        height: 30px;
+        border-radius: 10px;
+        -webkit-transition: width 0.5s ease;
+        transition: width 0.8s ease;
+        }
+    .submit:hover{
+       width:25%;
+       color: rgb(38, 255, 0);
+    }
+    .log{
+        width:65%;
+        text-align:center; 
+        border:2px solid black; 
+        padding:10px;
+        border-radius:20px;
+        margin:2% auto;
+    }
+
+    .loginfooter{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    /* Página HOME */
+
+        audio{
+            display: none;
+        }
+
+        .logo{
+            width: 12%;
+            float: left;
+        }
+
+        .chat{
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
+            background-color: rgb(220, 246, 255);
+            padding: 20px 20px;
+            border: solid 1px;
+            border-radius: 20px;
+            margin-bottom: 2%;
+            box-shadow: 8px 8px 8px 8px;
+        }
+        .msg{
+            background: white;
+            border-radius: 30px;
+            text-align: left;
+            padding: 5px 15px;
+        }
+
+        .painelchamados{
+            border: 2px solid black;
+            margin:0 10%;
+            border-radius: 10px;
+            padding: 2%;
+            text-align: center;
+            margin-bottom: 1%;
+        }
+        .painelchamados h2{
+            text-align: left;
+        }
+        .painelchamados p{
+            font-size: 18px;
+            text-align: left;
+        }
+        .painelchamados u{
+            font-size: 20px;
+        }
+
+        .inputchamado{
+            border:2px solid black;
+            border-radius: 6px;
+            margin: 2px;
+            padding:15px;
+            height: 30px;
+            width: 50%;
+            color: black;
+            background: transparent;
+        }
+        
+
+    footer{
+        padding:20px;
+        background-image: linear-gradient(to right, rgb(228, 228, 228), blue);
+        text-align: center;
+        border-top: 2px solid black;
+    }
+    footer img{
+        width: 60px;
+        -webkit-transition: width 0.5s ease;
+        transition: width 0.8s ease;
+        padding: 10px;
+    }
+    footer img:hover{
+        border-bottom: 2px solid white;
+        width: 80px;
+    }
+    
+    
+    footer a{
+        margin-right: 2%;
+    }
+    footer p{
+        color: white;
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 0.1em 0.1em 0.1em black;
+    }
+
+    footer h2{
+        margin: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+       
+
+        header p{
+            font-size: 20px;
+            margin-left: -25px;
+        }
+
+        /* Página LOGIN */
+        .painelogin{
+            width: 80%;
+            height: 350px;
+            margin:10% auto;
+        }
+            
+        .painelogin img{
+            width: 50%;
+        }
+
+        /* h2 da pagina login */
+        .log{
+            width: 90% !important;
+            font-size: 16px;
+        }
+
+        .loginput{
+            width: 70%;
+        }
+
+
+        /* Página HOME */
+
+        .logo {
+            width: 30%;
+            position: relative;
+            top: 10px;
+        }
+        .painelchamados{
+            width: 90%;
+            margin: 20px auto;
+        }
+        .inputchamado{
+            width: 90%;
+        }
+
+        footer img{
+            width: 15%;
+            margin: 0 auto;
+            }
+        footer img:hover{
+            width: 15%;
+        }
+        .submit{
+            width: 30%;
+        }
+        .submit:hover{
+            width: 50%;
+        }
+        footer p{
+            font-size: 20px;
+            text-align: left;
+            margin: 0;
+        }
+    }
